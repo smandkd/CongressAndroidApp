@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        tools:context=".UI.MainActivity">
+
+        <LinearLayout
+            android:id="@+id/article_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="8dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="429dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:text="뉴스 기사"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/article_button"
+                    android:layout_width="39dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/ic_baseline_add_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.954"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/article_tv_title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="26dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/article_tv_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="26dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/article_tv_title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="26dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/article_tv_title4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="26dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingTop="6dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/diplomacy_linearLayout">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="429dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:text="입법 예고"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/legis_button"
+                    android:layout_width="39dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/ic_baseline_add_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.954"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/legis_tv_title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="26dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/legis_tv_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="26dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/legis_tv_title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="26dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/legis_tv_title4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="26dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/petition_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingTop="6dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="429dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:text="계류 청원"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/petition_button"
+                    android:layout_width="39dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/ic_baseline_add_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.954"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/petition_tv_title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="26dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/petition_tv_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="26dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/petition_tv_title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="26dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/petition_tv_title4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="26dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/diplomacy_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingTop="6dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/article_linearLayout">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="429dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:text="국회 외교 사안"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <Button
+                    android:id="@+id/diplomacy_button"
+                    android:layout_width="39dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/ic_baseline_add_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.954"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/diplomacy_tv_title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="26dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/diplomacy_tv_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="26dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/diplomacy_tv_title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="26dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/diplomacy_tv_title4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="26dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
